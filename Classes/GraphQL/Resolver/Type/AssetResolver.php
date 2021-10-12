@@ -72,7 +72,7 @@ class AssetResolver implements ResolverInterface
      */
     public function localId(AssetProxyInterface $assetProxy): ?string
     {
-        return $assetProxy->getLocalAssetIdentifier();
+        return $assetProxy->getLocalAssetIdentifier() ?? '';
     }
 
     /**
